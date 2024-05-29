@@ -1,0 +1,35 @@
+{
+  "name": "ligdicash",
+  "version": "1.0.0",
+  "description": "SDK javascript pour l'API Ligdicash",
+  "source": "src/index.ts",
+  "main": "dist/index.js",
+  "module": "dist/index.m.js",
+  "unpkg": "dist/index.umd.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "rm -rf dist && microbundle --tsconfig tsconfig.json",
+    "dev": "microbundle --watch --tsconfig tsconfig.json",
+    "publish-npm:patch": "npm run build && npm version patch && npm publish --access public",
+    "publish-npm:minor": "npm run build && npm version minor && npm publish --access public",
+    "publish-npm:major": "npm run build && npm version major && npm publish --access public",
+    "publish-npm": "npm run build && npm publish --access public"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "microbundle": "^0.15.1"
+  },
+  "dependencies": {
+    "cross-fetch": "^4.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ligdicash/ligdicash-javascript.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Ligdicash/ligdicash-javascript/issues"
+  },
+  "homepage": "https://github.com/Ligdicash/ligdicash-javascript#readme"
+}
