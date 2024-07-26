@@ -42,7 +42,10 @@ export default class Ligdicash {
     );
   }
 
-  getTransaction(token: string, type: "payin" | "payout" = "payin") {
+  getTransaction(
+    token: string,
+    type: "payin" | "client_payout" | "merchant_payout" = "payin"
+  ) {
     return getTransaction_(
       {
         apiKey: this.apiKey,

@@ -1,6 +1,6 @@
 {
   "name": "ligdicash",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "SDK javascript pour l'API Ligdicash",
   "source": "src/index.ts",
   "main": "dist/index.js",

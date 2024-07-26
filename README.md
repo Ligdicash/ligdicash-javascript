@@ -135,7 +135,7 @@ Pour obtenir une transaction, vous devez fournir le token de la transaction.
 
 ```javascript
 const transaction_token = "eyJ0eXAiOiJ...pZCI6IjY"
-const transaction = await client.getTransaction(transaction_token, "payin"); // "payin" ou "payout"
+const transaction = await client.getTransaction(transaction_token, "payin"); // "payin" ou "client_payout" ou "merchant_payout"
 const status = transaction.status;
 if (status === "completed") {
     // La transaction a été effectuée avec succès
